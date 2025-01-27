@@ -7,9 +7,17 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import LoginModal from './LoginModal';
+import { useMediaQuery, useTheme } from '@mui/material';
 
-export default function ButtonAppBar() {
+interface HeaderProps {
+  onLanguageChange: (newLanguage: string) => void;
+}
+
+export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
   const [open, setOpen] = React.useState(false);
+  const [language, setLanguage] = React.useState('en');
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -17,6 +25,12 @@ export default function ButtonAppBar() {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const toggleLanguage = () => {
+    const newLanguage = language === 'en' ? 'es' : 'en';
+    setLanguage(newLanguage);
+    onLanguageChange(newLanguage);
   };
 
   return (
@@ -32,9 +46,16 @@ export default function ButtonAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Family Recipes
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, fontSize: isSmallScreen ? '1rem' : '1.25rem' }}
+          >
+            {language === 'en' ? 'Family Recipes' : 'Recetas Familiares'}
           </Typography>
+          <Button color="inherit" onClick={toggleLanguage}>
+            {language === 'en' ? 'Switch to Spanish' : 'Cambiar a Inglés'}
+          </Button>
           <Button color="inherit" onClick={handleClickOpen}>Login</Button>
         </Toolbar>
       </AppBar>
