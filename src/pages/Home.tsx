@@ -1,13 +1,23 @@
-import '../App.css';
+import * as React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import RecipeList from '../components/RecipeList';
+import RecipeDetail from '../components/RecipeDetail';
 import Header from '../components/Header';
 
-const Home: React.FC = () => {
-  return (
-    <div>
-      <Header />
-      {/* Other content */}
-    </div>
-  );
-};
+export default function Home() {
+  const [language, setLanguage] = React.useState('en');
 
-export default Home;
+  const handleLanguageChange = (newLanguage: string) => {
+    setLanguage(newLanguage);
+  };
+
+  return (
+    <Router>
+      <Header onLanguageChange={handleLanguageChange} />
+      <Routes>
+        <Route path="/" element={<RecipeList language={language} />} />
+        <Route path="/recipe/:id" element={<RecipeDetail recipe={{ name: '', image: '', ingredients: [], steps: [] }} language={language} />} />
+      </Routes>
+    </Router>
+  );
+}
