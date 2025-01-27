@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import LoginModal from './LoginModal';
 import { useMediaQuery, useTheme, Avatar } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 interface HeaderProps {
   onLanguageChange: (newLanguage: string) => void;
@@ -41,9 +42,10 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
             sx={{ mr: 2 }}
           />
           <Typography
+            component={Link}
+            to="/"
             variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, fontSize: isSmallScreen ? '1rem' : '1.25rem' }}
+            sx={{ flexGrow: 1, fontSize: isSmallScreen ? '1rem' : '1.25rem', color: 'inherit', textDecoration: 'none' }}
           >
             {language === 'en' ? 'Family Recipes' : 'Recetas Familiares'}
           </Typography>
