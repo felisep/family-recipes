@@ -17,7 +17,7 @@ const RecipeList: React.FC<RecipeListProps> = ({ language }) => {
         {recipes.map(recipe => (
           <Grid item key={recipe.id} xs={12} sm={6} md={4}>
             <Card>
-              <Link to={`/recipe/${recipe.id}`} style={{ textDecoration: 'none' }}>
+              <Link to={`/recipe/${recipe.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <CardMedia
                   component="img"
                   height="140"
