@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Header from "../components/Header";
 import RecipeDetail from "../components/RecipeDetail";
 import RecipeList from "../components/RecipeList";
+import FullRecipeList from "../components/Recipes";
 
 export default function Home() {
 	const [language, setLanguage] = React.useState("en");
@@ -11,21 +12,5 @@ export default function Home() {
 		setLanguage(newLanguage);
 	};
 
-	return (
-		<Router>
-			<Header onLanguageChange={handleLanguageChange} />
-			<Routes>
-				<Route path="/" element={<RecipeList language={language} />} />
-				<Route
-					path="/recipe/:id"
-					element={
-						<RecipeDetail
-							recipe={{ name: "", image: "", ingredients: [], steps: [] }}
-							language={language}
-						/>
-					}
-				/>
-			</Routes>
-		</Router>
-	);
+	return <FullRecipeList />;
 }
