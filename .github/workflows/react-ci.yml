@@ -3,6 +3,6 @@ on: [pull_request, push]
 
 jobs:
   use_reusable_workflow:
-    uses: felisep/common_workflow/.github/workflows/common_node.yml@main
+    uses: felisep/common_workflow/.github/workflows/common_bun.yml@main
     with:
-      node-version: "22"
+      bun-version: "1.0.0"
