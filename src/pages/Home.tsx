@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import RecipeDetail from "../components/RecipeDetail";
 import RecipeList from "../components/RecipeList";
 import FullRecipeList from "../components/Recipes";
+import "./Home.css";
 
 export default function Home() {
 	const [language, setLanguage] = React.useState("en");
@@ -12,5 +13,9 @@ export default function Home() {
 		setLanguage(newLanguage);
 	};
 
-	return <FullRecipeList />;
+	return (
+		<div className="home">
+			<FullRecipeList />
+		</div>
+	);
 }
