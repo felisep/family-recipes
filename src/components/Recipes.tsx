@@ -18,16 +18,11 @@ const RecipesRow = ({ recipe }: RecipesRowProps) => {
 	);
 };
 
-const RecipeTable = ({ recipes }) => {
-	const rows = [];
-	let lastCategory = null;
+const RecipeTable = ({ recipes }: { recipes: Recipe[] }) => {
+	const rows: JSX.Element[] = [];
 
 	recipes.forEach((recipes) => {
-		if (recipes.category !== lastCategory) {
-			rows.push(<RecipesRow recipe={recipes} />);
-		}
 		rows.push(<RecipesRow recipe={recipes} key={recipes.name} />);
-		lastCategory = recipes.category;
 	});
 
 	return (
@@ -43,13 +38,13 @@ const RecipeTable = ({ recipes }) => {
 	);
 };
 
-function RecipeList({ recipes }) {
+const RecipeList = ({ recipes }: { recipes: Recipe[] }) => {
 	return (
 		<div>
 			<RecipeTable recipes={recipes} />
 		</div>
 	);
-}
+};
 
 export default function FullRecipeList() {
 	return <RecipeList recipes={RECIPES} />;
