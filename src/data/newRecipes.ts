@@ -1,9 +1,10 @@
 const RECIPES = [
 	{
-		id: 1,
+		id: "1",
 		name: "Pasta Carbonara",
 		description:
 			"A classic Italian pasta dish with eggs, cheese, pancetta, and black pepper.",
+		people: 2,
 		ingredients: [
 			"200g spaghetti",
 			"100g pancetta",
@@ -13,9 +14,10 @@ const RECIPES = [
 		],
 	},
 	{
-		id: 2,
+		id: "2",
 		name: "Chicken Tikka Masala",
 		description: "Tender pieces of chicken in a rich, creamy tomato sauce.",
+		people: 4,
 		ingredients: [
 			"500g chicken breast",
 			"200g tomatoes",
@@ -28,10 +30,11 @@ const RECIPES = [
 		],
 	},
 	{
-		id: 3,
+		id: "3",
 		name: "Caesar Salad",
 		description:
 			"A refreshing salad with romaine lettuce, croutons, and Caesar dressing.",
+		people: 2,
 		ingredients: [
 			"1 head romaine lettuce",
 			"100g croutons",
