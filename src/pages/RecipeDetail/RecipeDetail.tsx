@@ -19,7 +19,7 @@ const RecipeDetail = () => {
 	const steps = recipe?.steps || [];
 	return (
 		<div className="recipe-detail">
-			<RecipeName name={recipe?.name || ""} creator={recipe?.creator || ""} />
+			<RecipeName name={recipe?.name || ""} creator={recipe?.creator || ""} people={recipe?.people || 0} />
 			<Ingredients ingredients={ingredients} />
 			<Instructions instructions={steps} />
 		</div>
