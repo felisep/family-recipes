@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { Link } from "react-router-dom";
 import LoginModal from "./LoginModal";
+import TranslateBtn from "./Translator";
 
 interface HeaderProps {
 	onLanguageChange: (newLanguage: string) => void;
@@ -34,7 +35,7 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
 
 	return (
 		<Box sx={{ flexGrow: 1 }}>
-			<AppBar position="static" sx={{ backgroundColor: "#0D47A1" }}>
+			<AppBar position="static" sx={{ backgroundColor: "var(--color-card)" }}>
 				<Toolbar>
 					<Avatar alt="F" src="../assets/logo192.png" sx={{ mr: 2 }} />
 					<Typography
@@ -44,16 +45,17 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
 						sx={{
 							flexGrow: 1,
 							fontSize: isSmallScreen ? "1rem" : "1.25rem",
-							color: "inherit",
+							color: "var(--color-text)",
 							textDecoration: "none",
 						}}
 					>
 						{language === "en" ? "Family Recipes" : "Recetas Familiares"}
 					</Typography>
-					<Button color="inherit" onClick={toggleLanguage}>
-						{language === "en" ? "Spanish" : "Inglés"}
-					</Button>
-					<Button color="inherit" onClick={handleClickOpen}>
+					<TranslateBtn language={language} toggleLanguage={toggleLanguage} />
+					<Button
+						onClick={handleClickOpen}
+						sx={{ ml: 2, color: "var(--color-text)" }}
+					>
 						Login
 					</Button>
 				</Toolbar>

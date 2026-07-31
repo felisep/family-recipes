@@ -1,0 +1,9 @@
+.recipe-detail {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-wrap: wrap;
+	border: var(--debug-border) red;
+	justify-content: flex-start;
+	column-gap: 5rem;
+}

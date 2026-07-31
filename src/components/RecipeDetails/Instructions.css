@@ -1,0 +1,15 @@
+.instructions {
+	border: var(--debug-border) purple;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.instructions li {
+	margin-bottom: 0.75rem;
+	margin-left: -1.2rem;
+}
+
+.instructions ol {
+	margin-top: -0.5rem;
+}

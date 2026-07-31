@@ -10,7 +10,6 @@ const RecipesRow = ({ recipe }: RecipesRowProps) => {
 		>
 			<td>{recipe.name}</td>
 			<td>{recipe.description}</td>
-			<td>{recipe.people}</td>
 		</tr>
 	);
 };
