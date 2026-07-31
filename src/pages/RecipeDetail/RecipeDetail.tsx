@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
-import RECIPES from "../../data/newRecipes";
 import Ingredients from "../../components/RecipeDetails/Ingredients";
 import RecipeName from "../../components/RecipeDetails/RecipeName";
-
+import RECIPES from "../../data/newRecipes";
+import "./RecipeDetail.css";
+import Instructions from "../../components/RecipeDetails/Instructions";
 
 const RecipeDetail = () => {
 	const { id: paramId } = useParams<{ id: string }>();
@@ -15,10 +16,12 @@ const RecipeDetail = () => {
 	const recipe = RECIPES.find((recipe) => recipe.id === recipeId);
 	console.log("RecipeDetail: recipe", recipe?.id);
 	const ingredients = recipe?.ingredients || [];
+	const steps = recipe?.steps || [];
 	return (
-		<div>
+		<div className="recipe-detail">
 			<RecipeName name={recipe?.name || ""} creator={recipe?.creator || ""} />
 			<Ingredients ingredients={ingredients} />
+			<Instructions instructions={steps} />
 		</div>
 	);
 };

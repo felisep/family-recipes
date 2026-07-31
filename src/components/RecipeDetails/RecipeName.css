@@ -1,0 +1,4 @@
+.recipe-name {
+	border: var(--debug-border) blue;
+	padding: 1rem;
+}

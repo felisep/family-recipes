@@ -2,6 +2,7 @@ import * as React from "react";
 import { createRoot } from "react-dom/client";
 import Home from "./pages/Home/Home";
 import "./index.css";
+import "./debug.css";
 
 const container = document.getElementById("root");
 if (container) {

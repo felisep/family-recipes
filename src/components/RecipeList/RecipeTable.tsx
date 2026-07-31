@@ -8,7 +8,6 @@ const RecipeHeader = () => {
 			<tr>
 				<th>Name</th>
 				<th>Description</th>
-				<th>People</th>
 			</tr>
 		</thead>
 	);

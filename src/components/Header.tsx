@@ -51,8 +51,11 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
 					>
 						{language === "en" ? "Family Recipes" : "Recetas Familiares"}
 					</Typography>
-						<TranslateBtn language={language} toggleLanguage={toggleLanguage} />
-					<Button onClick={handleClickOpen} sx={{ ml: 2, color: "var(--color-text)" }}>
+					<TranslateBtn language={language} toggleLanguage={toggleLanguage} />
+					<Button
+						onClick={handleClickOpen}
+						sx={{ ml: 2, color: "var(--color-text)" }}
+					>
 						Login
 					</Button>
 				</Toolbar>

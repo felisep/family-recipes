@@ -5,6 +5,7 @@ type Recipe = {
 	description: string;
 	people: number;
 	ingredients: string[];
+	steps: string[];
 };
 
 type RecipesRowProps = {

@@ -1,0 +1,13 @@
+.ingredients {
+	border: var(--debug-border) green;
+	padding: 2rem 1rem;
+}
+
+.ingredients li {
+	margin-bottom: 0.75rem;
+	margin-left: -1.5rem;
+}
+
+.ingredients ul {
+	margin-top: -0.5rem;
+}
