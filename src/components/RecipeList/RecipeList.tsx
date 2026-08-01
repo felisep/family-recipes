@@ -1,4 +1,4 @@
-import RECIPES from "../../data/newRecipes";
+import RECIPES from "../../data/Recipes";
 import type { Recipe } from "../../types/recipe";
 import RecipeTable from "./RecipeTable";
 

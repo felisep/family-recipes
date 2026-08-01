@@ -9,7 +9,6 @@ const RecipesRow = ({ recipe }: RecipesRowProps) => {
 			style={{ cursor: "pointer" }}
 		>
 			<td>{recipe.name}</td>
-			<td>{recipe.description}</td>
 		</tr>
 	);
 };
