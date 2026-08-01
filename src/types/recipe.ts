@@ -4,12 +4,18 @@ type Recipe = {
 	creator: string;
 	description: string;
 	people: number;
-	ingredients: string[];
+	ingredients: IngredientsInfo[];
 	steps: string[];
+};
+
+type IngredientsInfo = {
+	name: string;
+	amount: number | null;
+	unit: string;
 };
 
 type RecipesRowProps = {
 	recipe: Recipe;
 };
 
-export type { Recipe, RecipesRowProps };
+export type { IngredientsInfo, Recipe, RecipesRowProps };

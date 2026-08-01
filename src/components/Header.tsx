@@ -6,6 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { Link } from "react-router-dom";
+import About from "../pages/About/About";
 import LoginModal from "./LoginModal";
 import TranslateBtn from "./Translator";
 
@@ -37,7 +38,6 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
 		<Box sx={{ flexGrow: 1 }}>
 			<AppBar position="static" sx={{ backgroundColor: "var(--color-card)" }}>
 				<Toolbar>
-					<Avatar alt="F" src="../assets/logo192.png" sx={{ mr: 2 }} />
 					<Typography
 						component={Link}
 						to="/"
@@ -51,12 +51,12 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
 					>
 						{language === "en" ? "Family Recipes" : "Recetas Familiares"}
 					</Typography>
-					<TranslateBtn language={language} toggleLanguage={toggleLanguage} />
+
 					<Button
-						onClick={handleClickOpen}
+						onClick={() => (window.location.href = "/about")}
 						sx={{ ml: 2, color: "var(--color-text)" }}
 					>
-						Login
+						About
 					</Button>
 				</Toolbar>
 			</AppBar>
