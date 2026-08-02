@@ -18,7 +18,6 @@ const RecipeName = ({
 	return (
 		<div className="recipe-name">
 			<h1>{name}</h1>
-			{creator && <p>Creator: {recipeNameExist}</p>}
 			<Input people={people} amountPeople={number} setPeople={setNumber} />
 		</div>
 	);

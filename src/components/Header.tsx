@@ -49,7 +49,7 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
 							textDecoration: "none",
 						}}
 					>
-						{language === "en" ? "Family Recipes" : "Recetas Familiares"}
+						{language === "en" ? "Familie Oppskrifter" : "Recetas Familiares"}
 					</Typography>
 
 					<Button

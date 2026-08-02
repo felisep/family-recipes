@@ -28,7 +28,11 @@ const RecipeDetail = () => {
 				number={number}
 				setNumber={setNumber}
 			/>
-			<Ingredients ingredients={ingredients} number={number} />
+			<Ingredients
+				ingredients={ingredients}
+				number={number}
+				people={recipe?.people || 0}
+			/>
 			<Instructions instructions={steps} />
 		</div>
 	);
