@@ -12,7 +12,7 @@ const Ingredients = ({
 }) => {
 	return (
 		<div className="ingredients">
-			<h2>Ingredients</h2>
+			<h2>Ingredienser</h2>
 			<ul>
 				{ingredients.map((ingredient, id) => (
 					<li key={id.toString()}>
