@@ -20,13 +20,12 @@ export default function ButtonAppBar() {
 	return (
 		<Box sx={{ flexGrow: 1 }}>
 			<AppBar position="static" sx={{ backgroundColor: "var(--color-card)" }}>
-				<Toolbar>
+				<Toolbar sx={{ justifyContent: "space-between" }}>
 					<Typography
 						component={Link}
 						to="/"
 						variant="h6"
 						sx={{
-							flexGrow: 1,
 							fontSize: isSmallScreen ? "1rem" : "1.25rem",
 							color: "var(--color-text)",
 							textDecoration: "none",
