@@ -1,6 +1,7 @@
 import RECIPES from "../../data/Recipes";
 import type { Recipe } from "../../types/recipe";
 import RecipeTable from "./RecipeTable";
+import "./RecipeList.css";
 
 const RecipeList = ({ recipes }: { recipes: Recipe[] }) => {
 	return (

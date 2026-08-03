@@ -1,0 +1,4 @@
+.about {
+	border: var(--debug-border) green;
+	margin: auto;
+}
