@@ -11,3 +11,5 @@ const RecipeCard = ({ name, picture }: RecipeCardProps) => {
 		</div>
 	);
 };
+
+export default RecipeCard;
