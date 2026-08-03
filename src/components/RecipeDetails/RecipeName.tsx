@@ -3,7 +3,6 @@ import Input from "../Input";
 
 const RecipeName = ({
 	name,
-	creator,
 	people,
 	number,
 	setNumber,
@@ -14,7 +13,6 @@ const RecipeName = ({
 	number: number;
 	setNumber: (number: number) => void;
 }) => {
-	const recipeNameExist = creator ? creator : <div></div>;
 	return (
 		<div className="recipe-name">
 			<h1>{name}</h1>
