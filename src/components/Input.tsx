@@ -10,7 +10,7 @@ export default function Input({
 }) {
 	return (
 		<p>
-			People:
+			Antall:
 			<input
 				value={amountPeople}
 				onChange={(e) => setPeople(Number(e.target.value))}

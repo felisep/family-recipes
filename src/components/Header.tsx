@@ -1,4 +1,4 @@
-import { Avatar, useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -6,32 +6,15 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { Link } from "react-router-dom";
-import About from "../pages/About/About";
 import LoginModal from "./LoginModal";
-import TranslateBtn from "./Translator";
 
-interface HeaderProps {
-	onLanguageChange: (newLanguage: string) => void;
-}
-
-export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
+export default function ButtonAppBar() {
 	const [open, setOpen] = React.useState(false);
-	const [language, setLanguage] = React.useState("en");
 	const theme = useTheme();
 	const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
-	const handleClickOpen = () => {
-		setOpen(true);
-	};
-
 	const handleClose = () => {
 		setOpen(false);
-	};
-
-	const toggleLanguage = () => {
-		const newLanguage = language === "en" ? "es" : "en";
-		setLanguage(newLanguage);
-		onLanguageChange(newLanguage);
 	};
 
 	return (
@@ -49,14 +32,14 @@ export default function ButtonAppBar({ onLanguageChange }: HeaderProps) {
 							textDecoration: "none",
 						}}
 					>
-						{language === "en" ? "Family Recipes" : "Recetas Familiares"}
+						{"Familie Oppskrifter"}
 					</Typography>
 
 					<Button
 						onClick={() => (window.location.href = "/about")}
 						sx={{ ml: 2, color: "var(--color-text)" }}
 					>
-						About
+						Mer info
 					</Button>
 				</Toolbar>
 			</AppBar>
