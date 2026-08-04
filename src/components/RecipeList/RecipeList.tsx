@@ -3,6 +3,8 @@ import type { Recipe } from "../../types/recipe";
 import RecipeTable from "./RecipeTable";
 import "./RecipeList.css";
 
+// small edit to trigger workflow
+
 const RecipeList = ({ recipes }: { recipes: Recipe[] }) => {
 	return (
 		<div className="recipe-list">
