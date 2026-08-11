@@ -36,7 +36,7 @@ export default function ButtonAppBar() {
 
 					<Button
 						onClick={() => (window.location.href = "/about")}
-						sx={{ ml: 2, color: "var(--color-text)" }}
+						sx={{ color: "var(--color-text)" }}
 					>
 						Mer info
 					</Button>
