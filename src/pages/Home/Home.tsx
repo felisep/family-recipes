@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<div className="home">
 			<BrowserRouter>
-				<ButtonAppBar onLanguageChange={() => {}} />
+				<ButtonAppBar />
 				<Routes>
 					<Route path="/" element={<FullRecipeList />} />
 					<Route path="recipe/:id" element={<RecipeDetail />} />
