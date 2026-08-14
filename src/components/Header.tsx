@@ -18,7 +18,7 @@ export default function ButtonAppBar() {
 						to="/"
 						variant="h6"
 						sx={{
-							fontSize: isSmallScreen ? "1rem" : "1.25rem",
+							fontSize: isSmallScreen ? "1.2rem" : "1.25rem",
 							color: "var(--color-text)",
 							textDecoration: "none",
 						}}
@@ -34,7 +34,7 @@ export default function ButtonAppBar() {
 							color: "var(--color-text)",
 							border: "none",
 							cursor: "pointer",
-							fontSize: isSmallScreen ? "0.8rem" : "1rem",
+							fontSize: isSmallScreen ? "1.2rem" : "1rem",
 						}}
 					>
 						Mer info
