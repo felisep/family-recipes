@@ -1,13 +1,18 @@
 import "./About.css";
+import picture from "../../assets/IMG_0640.webp";
 
 const About = () => {
 	return (
 		<div className="about">
-			<img src="" alt="" />
-			<h1>Om familie oppskrifter</h1>
-			<p>Siden er laget for å dele oppskrifter med familie og venner.</p>
-			Du kan justere mengden ingredienser basert på antall personer du lager mat
-			til.
+			<div>
+				<h1>Om familie oppskrifter</h1>
+				<p>
+					Siden er laget av Felipe og er et sted man kan finne
+					familieoppskrifter eller andre delikatesser. Du kan justere mengden
+					ingredienser basert på antall personer du lager mat til.
+				</p>
+			</div>
+			<img src={picture} alt="About" />
 		</div>
 	);
 };
