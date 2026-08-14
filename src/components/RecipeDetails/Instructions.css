@@ -1,6 +1,6 @@
 .instructions {
 	border: var(--debug-border) purple;
-	padding: 2rem 1rem;
+	padding-top: 1rem;
 	display: flex;
 	flex-direction: column;
 }
