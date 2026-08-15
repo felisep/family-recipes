@@ -1,13 +1,8 @@
-table {
-	width: auto;
-}
-
-td {
-	padding-bottom: 1rem;
-}
-
-tbody tr:hover {
-	color: var(--color-secondary);
+.recipe-card-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	width: fit-content;
 }
 
 @media (max-width: 600px) {

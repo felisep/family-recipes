@@ -1,19 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import type { RecipesRowProps } from "../../types/recipe";
 import "./RecipesRow.css";
 
 const RecipesRow = ({ recipe }: RecipesRowProps) => {
-	const navigate = useNavigate();
 	return (
-		<table>
-			<tr
-				onClick={() => navigate(`/recipe/${recipe.id}`)}
-				style={{ cursor: "pointer" }}
-				className="recipe-row"
-			>
-				<td>{recipe.name}</td>
-			</tr>
-		</table>
+		<Link to={`/recipe/${recipe.id}`} className="recipe-card">
+			<span className="recipe-card-name">{recipe.name}</span>
+		</Link>
 	);
 };
 
