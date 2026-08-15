@@ -14,13 +14,12 @@ type Ingredient = {
 };
 
 type IngredientsInfo = {
-	heading: string;
+	heading: string | null;
 	items: Ingredient[];
-	unit: string;
 };
 
 type RecipesRowProps = {
 	recipe: Recipe;
 };
 
-export type { IngredientsInfo, Recipe, RecipesRowProps };
+export type { Ingredient, IngredientsInfo, Recipe, RecipesRowProps };
