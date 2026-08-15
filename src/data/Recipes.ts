@@ -5,15 +5,25 @@ const RECIPES = [
 		description: "En klassisk fransk ostepai med egg, ost og skinke.",
 		people: 1,
 		ingredients: [
-			{ amount: 125, unit: "g", name: "smør (bunn)" },
-			{ amount: 3, unit: "ss", name: "vann (bunn)" },
-			{ amount: 3, unit: "dl", name: "hvetemel (bunn)" },
-			{ amount: null, unit: "", name: "Skinke" },
-			{ amount: null, unit: "", name: "Ost" },
-			{ amount: 3, unit: "", name: "egg" },
-			{ amount: 3, unit: "dl", name: "melk" },
-			{ amount: 1, unit: "ts", name: "salt" },
-			{ amount: 1, unit: "ts", name: "pepper" },
+			{
+				heading: "Bunn",
+				items: [
+					{ amount: 125, unit: "g", name: "smør (bunn)" },
+					{ amount: 3, unit: "ss", name: "vann (bunn)" },
+					{ amount: 3, unit: "dl", name: "hvetemel (bunn)" },
+				],
+			},
+			{
+				heading: "Fyll",
+				items: [
+					{ amount: null, unit: "", name: "Skinke" },
+					{ amount: null, unit: "", name: "Ost" },
+					{ amount: 3, unit: "", name: "egg" },
+					{ amount: 3, unit: "dl", name: "melk" },
+					{ amount: 1, unit: "ts", name: "salt" },
+					{ amount: 1, unit: "ts", name: "pepper" },
+				],
+			},
 		],
 		steps: [
 			"Kna sammen ingrediensene til bunnen og trykk det ut i en ildfast form.",
@@ -29,12 +39,17 @@ const RECIPES = [
 		description: "Chilensk brød som er mykt og deilig.",
 		people: 8,
 		ingredients: [
-			{ amount: 500, unit: "g", name: "hvetemel" },
-			{ amount: 80, unit: "g", name: "smør" },
-			{ amount: 5, unit: "g", name: "sukker" },
-			{ amount: 10, unit: "g", name: "bakepuler" },
-			{ amount: 250, unit: "g", name: "lunken vann" },
-			{ amount: 10, unit: "g", name: "salt" },
+			{
+				heading: null,
+				items: [
+					{ amount: 500, unit: "g", name: "hvetemel" },
+					{ amount: 80, unit: "g", name: "smør" },
+					{ amount: 5, unit: "g", name: "sukker" },
+					{ amount: 10, unit: "g", name: "bakepuler" },
+					{ amount: 250, unit: "g", name: "lunken vann" },
+					{ amount: 10, unit: "g", name: "salt" },
+				],
+			},
 		],
 		steps: [
 			"Smelt smør og bland alle ingrediensene",
@@ -46,18 +61,35 @@ const RECIPES = [
 	},
 	{
 		id: "3",
-		name: "Appelsinmarinade av svinekjøtt",
+		name: "Ramen svinekjøtt med appelsinmarinade",
 		description:
 			"En deilig appelsinmarinade med svinekjøtt. Lages tidlig om morgenen",
 		people: 2,
 		ingredients: [
-			{ amount: 1 / 2, unit: "dl", name: "soyasaus" },
-			{ amount: 1 / 2, unit: "dl", name: "riseddik" },
-			{ amount: 1, unit: "ss", name: "sukker" },
-			{ amount: 1, unit: "ts", name: "ingefær" },
-			{ amount: 1, unit: "hel", name: "chili" },
-			{ amount: 1, unit: "skivet", name: "appelsin" },
-			{ amount: 600, unit: "g", name: "svinefilet" },
+			{
+				heading: "Marinade",
+				items: [
+					{ amount: 1 / 2, unit: "dl", name: "soyasaus" },
+					{ amount: 1 / 2, unit: "dl", name: "riseddik" },
+					{ amount: 1, unit: "ss", name: "sukker" },
+					{ amount: 1, unit: "ts", name: "ingefær" },
+					{ amount: 1, unit: "hel", name: "chili" },
+					{ amount: 1, unit: "skivet", name: "appelsin" },
+					{ amount: 600, unit: "g", name: "svinefilet" },
+				],
+			},
+			{
+				heading: "Ramen",
+				items: [
+					{ amount: 1 / 2, unit: "dl", name: "soyasaus" },
+					{ amount: 1 / 2, unit: "dl", name: "riseddik" },
+					{ amount: 1, unit: "ss", name: "sukker" },
+					{ amount: 1, unit: "ts", name: "ingefær" },
+					{ amount: 1, unit: "hel", name: "chili" },
+					{ amount: 1, unit: "skivet", name: "appelsin" },
+					{ amount: 600, unit: "g", name: "svinefilet" },
+				],
+			},
 		],
 		steps: [
 			"Del appelsinene i båter",
@@ -65,18 +97,23 @@ const RECIPES = [
 		],
 	},
 	{
-		id: "4",
+		id: "5",
 		name: "Ramen med appelsinmarinert svinekjøtt",
 		description: "En deilig appelsinmarinade med svinekjøtt. Lag appelsin",
 		people: 2,
 		ingredients: [
-			{ amount: 1 / 2, unit: "dl", name: "soyasaus" },
-			{ amount: 1 / 2, unit: "dl", name: "riseddik" },
-			{ amount: 1, unit: "ss", name: "sukker" },
-			{ amount: 1, unit: "ts", name: "ingefær" },
-			{ amount: 1, unit: "hel", name: "chili" },
-			{ amount: 1, unit: "skivet", name: "appelsin" },
-			{ amount: 600, unit: "g", name: "svinefilet" },
+			{
+				heading: "Marinade",
+				items: [
+					{ amount: 1 / 2, unit: "dl", name: "soyasaus" },
+					{ amount: 1 / 2, unit: "dl", name: "riseddik" },
+					{ amount: 1, unit: "ss", name: "sukker" },
+					{ amount: 1, unit: "ts", name: "ingefær" },
+					{ amount: 1, unit: "hel", name: "chili" },
+					{ amount: 1, unit: "skivet", name: "appelsin" },
+					{ amount: 600, unit: "g", name: "svinefilet" },
+				],
+			},
 		],
 		steps: [
 			"Del appelsinene i båter",

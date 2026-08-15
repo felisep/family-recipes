@@ -7,9 +7,15 @@ type Recipe = {
 	steps: string[];
 };
 
-type IngredientsInfo = {
-	name: string;
+type Ingredient = {
 	amount: number | null;
+	unit: string;
+	name: string;
+};
+
+type IngredientsInfo = {
+	heading: string;
+	items: Ingredient[];
 	unit: string;
 };
 
