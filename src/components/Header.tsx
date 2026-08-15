@@ -20,10 +20,9 @@ export default function ButtonAppBar() {
 					<Typography
 						component={Link}
 						to="/"
-						variant="h6"
 						sx={{
 							color: "var(--color-text)",
-							fontSize: { xs: "1.25rem", sm: "1.45rem" },
+							fontSize: { xs: "1.1rem", sm: "1.25rem" },
 							lineHeight: 1.2,
 							minWidth: 0,
 							overflow: "hidden",
@@ -41,7 +40,7 @@ export default function ButtonAppBar() {
 						sx={{
 							color: "var(--color-text)",
 							flexShrink: 0,
-							fontSize: { xs: "1.25rem", sm: "1.2rem" },
+							fontSize: { xs: "0.95rem", sm: "1rem" },
 							lineHeight: 1.2,
 							textDecoration: "none",
 						}}
