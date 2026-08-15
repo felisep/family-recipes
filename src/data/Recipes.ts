@@ -3,7 +3,7 @@ const RECIPES = [
 		id: "1",
 		name: "Fransk Ostepai",
 		description: "En klassisk fransk ostepai med egg, ost og skinke.",
-		people: 1,
+		people: 4,
 		ingredients: [
 			{
 				heading: "Bunn",
@@ -87,7 +87,7 @@ const RECIPES = [
 		id: "6",
 		name: "Empanadas",
 		description: "Chilenske empanadas med kjøttdeigfyll, oliven og rosiner.",
-		people: null,
+		people: 8,
 		ingredients: [
 			{
 				heading: "Deig",
@@ -141,7 +141,7 @@ const RECIPES = [
 		id: "7",
 		name: "Gulrotkake",
 		description: "Saftig gulrotkake med kremostglasur.",
-		people: null,
+		people: 4,
 		ingredients: [
 			{
 				heading: "Bunn",
@@ -180,7 +180,7 @@ const RECIPES = [
 		id: "8",
 		name: "Tandoori Chicken",
 		description: "Yoghurtmarinert tandoorikylling servert med ris og papadums.",
-		people: null,
+		people: 2,
 		ingredients: [
 			{
 				heading: null,
@@ -207,7 +207,7 @@ const RECIPES = [
 		id: "9",
 		name: "Rød linsesuppe",
 		description: "Kremet suppe av røde linser med rød currypaste.",
-		people: null,
+		people: 2,
 		ingredients: [
 			{
 				heading: null,
@@ -236,7 +236,7 @@ const RECIPES = [
 		id: "10",
 		name: "Fiskesuppe",
 		description: "Kremet fiskesuppe med hjemmelaget kraft av fiskerester.",
-		people: null,
+		people: 4,
 		ingredients: [
 			{
 				heading: "Kraft",
@@ -278,7 +278,7 @@ const RECIPES = [
 		id: "11",
 		name: "Kaldhevet Foccacia",
 		description: "Luftig focaccia med lang kaldheving og god olivenolje.",
-		people: null,
+		people: 15,
 		ingredients: [
 			{
 				heading: null,

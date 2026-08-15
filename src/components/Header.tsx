@@ -7,13 +7,20 @@ import { Link } from "react-router-dom";
 export default function ButtonAppBar() {
 	return (
 		<Box sx={{ flexGrow: 1 }}>
-			<AppBar position="static" sx={{ backgroundColor: "var(--color-card)" }}>
+			<AppBar
+				position="static"
+				elevation={0}
+				sx={{
+					backgroundColor: "transparent",
+					borderBottom: "2px solid var(--color-text)",
+				}}
+			>
 				<Toolbar
 					sx={{
 						alignItems: "center",
 						gap: { xs: 1.5, sm: 2 },
 						justifyContent: "space-between",
-						minHeight: { xs: 52, sm: 64 },
+						minHeight: { xs: 56, sm: 72 },
 						px: { xs: 1.5, sm: 3 },
 					}}
 				>
@@ -22,7 +29,8 @@ export default function ButtonAppBar() {
 						to="/"
 						sx={{
 							color: "var(--color-text)",
-							fontSize: { xs: "1.1rem", sm: "1.25rem" },
+							fontSize: { xs: "1.3rem", sm: "1.5rem" },
+							fontWeight: 700,
 							lineHeight: 1.2,
 							minWidth: 0,
 							overflow: "hidden",
@@ -40,7 +48,7 @@ export default function ButtonAppBar() {
 						sx={{
 							color: "var(--color-text)",
 							flexShrink: 0,
-							fontSize: { xs: "0.95rem", sm: "1rem" },
+							fontSize: { xs: "1.1rem", sm: "1.25rem" },
 							lineHeight: 1.2,
 							textDecoration: "none",
 						}}

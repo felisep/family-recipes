@@ -10,13 +10,11 @@ const RecipeTable = ({ recipes }: { recipes: Recipe[] }) => {
 	return (
 		<>
 			<h1>Name</h1>
-			<table>
-				<tbody>
-					{sortedRecipes.map((recipe) => (
-						<RecipesRow recipe={recipe} key={recipe.name} />
-					))}
-				</tbody>
-			</table>
+			<div className="recipe-card-list">
+				{sortedRecipes.map((recipe) => (
+					<RecipesRow recipe={recipe} key={recipe.name} />
+				))}
+			</div>
 		</>
 	);
 };
