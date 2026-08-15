@@ -9,3 +9,9 @@ td {
 tbody tr:hover {
 	color: var(--color-secondary);
 }
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 2rem;
+	}
+}

@@ -23,7 +23,7 @@ export default function ButtonAppBar() {
 						variant="h6"
 						sx={{
 							color: "var(--color-text)",
-							fontSize: { xs: "1.05rem", sm: "1.25rem" },
+							fontSize: { xs: "1.25rem", sm: "1.45rem" },
 							lineHeight: 1.2,
 							minWidth: 0,
 							overflow: "hidden",
@@ -41,7 +41,7 @@ export default function ButtonAppBar() {
 						sx={{
 							color: "var(--color-text)",
 							flexShrink: 0,
-							fontSize: { xs: "1.05rem", sm: "1rem" },
+							fontSize: { xs: "1.25rem", sm: "1.2rem" },
 							lineHeight: 1.2,
 							textDecoration: "none",
 						}}
