@@ -23,7 +23,6 @@ const RecipeDetail = () => {
 		<div className="recipe-detail">
 			<RecipeName
 				name={recipe?.name || ""}
-				creator={recipe?.creator || ""}
 				people={recipe?.people || 0}
 				number={number}
 				setNumber={setNumber}

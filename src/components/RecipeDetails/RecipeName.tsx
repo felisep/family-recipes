@@ -8,7 +8,6 @@ const RecipeName = ({
 	setNumber,
 }: {
 	name: string;
-	creator: string;
 	people: number;
 	number: number;
 	setNumber: (number: number) => void;

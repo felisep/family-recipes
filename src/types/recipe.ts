@@ -7,14 +7,19 @@ type Recipe = {
 	steps: string[];
 };
 
-type IngredientsInfo = {
-	name: string;
+type Ingredient = {
 	amount: number | null;
 	unit: string;
+	name: string;
+};
+
+type IngredientsInfo = {
+	heading: string | null;
+	items: Ingredient[];
 };
 
 type RecipesRowProps = {
 	recipe: Recipe;
 };
 
-export type { IngredientsInfo, Recipe, RecipesRowProps };
+export type { Ingredient, IngredientsInfo, Recipe, RecipesRowProps };
