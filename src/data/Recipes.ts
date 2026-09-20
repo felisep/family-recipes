@@ -523,7 +523,7 @@ const RECIPES = [
 		id: "18",
 		name: "Chunky Chocolate Chip Peanut Butter Cookies",
 		description: "Tykke cookies med peanøttsmør og store biter melkesjokolade.",
-		people: null,
+		people: 24,
 		ingredients: [
 			{
 				heading: null,
@@ -553,7 +553,7 @@ const RECIPES = [
 		id: "19",
 		name: "Asiatisk dressing",
 		description:
-			"Asiatisk dressing med soyasaus og sesamolje. Velg stor eller liten porsjon.",
+			"Asiatisk dressing med soyasaus og sesamolje. Velg liten (2 pers) eller stor porsjon.",
 		people: null,
 		ingredients: [
 			{
