@@ -444,6 +444,290 @@ const RECIPES = [
 			"Topp med frukt eller bær etter eget valg.",
 		],
 	},
+	{
+		id: "16",
+		name: "Pastel de Choclo",
+		description:
+			"Chilensk maispai med pino, kylling, hardkokte egg, rosiner og oliven.",
+		people: 5,
+		ingredients: [
+			{
+				heading: "Pino",
+				items: [
+					{ amount: 2, unit: "pakker", name: "kjøttdeig" },
+					{ amount: 2, unit: "store", name: "løk" },
+					{ amount: 5, unit: "g", name: "kummin" },
+					{ amount: null, unit: "", name: "litt pepper" },
+					{ amount: null, unit: "", name: "rød paprika" },
+					{ amount: null, unit: "", name: "olje" },
+				],
+			},
+			{
+				heading: "Maismos",
+				items: [
+					{ amount: 4, unit: "store bokser", name: "mais" },
+					{ amount: null, unit: "", name: "flere blader basilikum" },
+					{ amount: null, unit: "", name: "smør til formen" },
+					{ amount: null, unit: "", name: "litt sukker til toppen" },
+				],
+			},
+			{
+				heading: "Fyll",
+				items: [
+					{ amount: 7, unit: "", name: "kyllingklubber" },
+					{ amount: 3, unit: "", name: "hardkokte egg" },
+					{ amount: null, unit: "", name: "oliven" },
+				],
+			},
+		],
+		steps: [
+			"Lag pinoen på samme måte som til empanadas.",
+			"Ta av skinnet på kyllingen.",
+			"Mal maisen sammen med flere basilikumblader. Prøv å få ut mest mulig vann av maisen, så den ikke blir vassen.",
+			"Smør en form med smør og legg et lag maismos i bunnen.",
+			"Legg pinoen på bunnen, og fordel kylling, egg, rosiner og oliven over.",
+			"Dekk med resten av maismosen og strø litt sukker på toppen, så den blir gyllen.",
+			"Stek på 180 - 200 grader i 25 minutter, muligens mer, til den er gyllen.",
+		],
+	},
+	{
+		id: "17",
+		name: "Maissuppe",
+		description: "Kremet maissuppe med potet, servert med parmesan og bacon.",
+		people: 4,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: 1 / 2, unit: "stk", name: "gul løk" },
+					{ amount: 2, unit: "fedd", name: "hvitløk" },
+					{ amount: 6, unit: "små", name: "poteter" },
+					{ amount: 1, unit: "ss", name: "olivenolje" },
+					{ amount: 6, unit: "dl", name: "vann" },
+					{ amount: 5, unit: "dl", name: "melk" },
+					{ amount: null, unit: "", name: "salt, pepper og paprika" },
+					{ amount: 570, unit: "g", name: "mais" },
+					{ amount: 2, unit: "ts", name: "grønnsaksbuljong" },
+				],
+			},
+		],
+		steps: [
+			"Fres løk og hvitløk i oljen.",
+			"Tilsett vann og poteter og la det koke i 15 minutter.",
+			"Tilsett mais, melk, krydder og buljong.",
+			"Stavmiks til en jevn suppe.",
+			"Server med parmesan og stekt bacon.",
+		],
+	},
+	{
+		id: "18",
+		name: "Chunky Chocolate Chip Peanut Butter Cookies",
+		description: "Tykke cookies med peanøttsmør og store biter melkesjokolade.",
+		people: 24,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: 165, unit: "g", name: "mel" },
+					{ amount: 1 / 2, unit: "ts", name: "natron" },
+					{ amount: 1 / 2, unit: "ts", name: "salt" },
+					{ amount: 175, unit: "g", name: "smør (romtemperert)" },
+					{ amount: 115, unit: "g", name: "sukker" },
+					{ amount: 115, unit: "g", name: "brunt sukker" },
+					{ amount: 4, unit: "ss", name: "peanøttsmør" },
+					{ amount: 1, unit: "", name: "egg" },
+					{ amount: 1, unit: "ts", name: "vaniljesukker" },
+					{ amount: 200, unit: "g", name: "melkesjokolade" },
+				],
+			},
+		],
+		steps: [
+			"Miks smør, sukker, brunt sukker og peanøttsmør i ca. 3 minutter.",
+			"Tilsett egg og miks i 3 - 5 minutter.",
+			"Tilsett mel, natron, salt og vaniljesukker.",
+			"Ha i hakket melkesjokolade.",
+			"Stek på 190 grader i 8 - 10 minutter, og avkjøl på rist.",
+		],
+	},
+	{
+		id: "19",
+		name: "Asiatisk dressing",
+		description:
+			"Asiatisk dressing med soyasaus og sesamolje. Velg liten (2 pers) eller stor porsjon.",
+		people: null,
+		ingredients: [
+			{
+				heading: "Stor",
+				items: [
+					{ amount: 1 / 2, unit: "dl", name: "soyasaus" },
+					{ amount: 2, unit: "ss", name: "sesamolje" },
+					{ amount: 1 / 2, unit: "dl", name: "eddik" },
+					{ amount: 1 / 2, unit: "dl", name: "olivenolje" },
+					{ amount: 1, unit: "ss", name: "sukker" },
+				],
+			},
+			{
+				heading: "Liten",
+				items: [
+					{ amount: 1, unit: "ss", name: "soyasaus" },
+					{ amount: 2, unit: "ts", name: "sesamolje" },
+					{ amount: 1, unit: "ss", name: "eddik" },
+					{ amount: 1, unit: "ss", name: "olje" },
+					{ amount: 1, unit: "ts", name: "sukker" },
+				],
+			},
+		],
+		steps: ["Bland alle ingrediensene godt sammen."],
+	},
+	{
+		id: "20",
+		name: "Poke saus",
+		description: "Kremet pokesaus med soyasaus, lime og majones.",
+		people: 4,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: 2, unit: "ss", name: "soyasaus" },
+					{ amount: 1 / 2, unit: "ts", name: "saft fra lime" },
+					{ amount: 5, unit: "drag", name: "pepper" },
+					{ amount: 4, unit: "ss", name: "majones" },
+					{ amount: null, unit: "", name: "salt" },
+				],
+			},
+		],
+		steps: ["Bland alle ingrediensene godt sammen og smak til med salt."],
+	},
+	{
+		id: "21",
+		name: "Thai biffsalat",
+		description: "Frisk thaisalat med biff, mango og limedressing.",
+		people: null,
+		ingredients: [
+			{
+				heading: "Salaten",
+				items: [
+					{ amount: 500, unit: "g", name: "biff" },
+					{ amount: 1, unit: "", name: "gulrot" },
+					{ amount: 1, unit: "", name: "agurk" },
+					{ amount: 1, unit: "", name: "mango" },
+					{ amount: 4, unit: "", name: "vårløk" },
+					{ amount: 1, unit: "bunt", name: "koriander" },
+					{ amount: 1, unit: "håndfull", name: "peanøtter" },
+					{ amount: null, unit: "", name: "salt og pepper" },
+				],
+			},
+			{
+				heading: "Dressing",
+				items: [
+					{ amount: 2, unit: "stk", name: "lime" },
+					{ amount: 1, unit: "ss", name: "brun farin" },
+					{ amount: 2, unit: "ss", name: "soyasaus" },
+					{ amount: 1 / 2, unit: "ss", name: "fiskesaus" },
+					{ amount: 1, unit: "ss", name: "revet ingefær" },
+					{ amount: null, unit: "1/2 - 1", name: "rød chili" },
+					{ amount: 1, unit: "fedd", name: "hvitløk" },
+				],
+			},
+		],
+		steps: [
+			"Bland alle ingrediensene til dressingen.",
+			"Stek biffen, skjær opp salaten og bland alt med dressingen. Topp med koriander og peanøtter.",
+		],
+	},
+	{
+		id: "22",
+		name: "Waldorfsalat",
+		description: "Klassisk waldorfsalat med eple, stangselleri og valnøtter.",
+		people: 4,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: 3, unit: "", name: "epler" },
+					{ amount: 2, unit: "stenger", name: "stangselleri" },
+					{ amount: 2, unit: "ringer", name: "ananas" },
+					{ amount: 50, unit: "g", name: "valnøtter" },
+					{ amount: 1.5, unit: "dl", name: "majones" },
+					{ amount: 1.5, unit: "dl", name: "stivpisket kremfløte" },
+					{ amount: null, unit: "", name: "saften av 1 sitron" },
+					{ amount: 2, unit: "ss", name: "ananassaft" },
+					{ amount: null, unit: "", name: "blå druer" },
+				],
+			},
+		],
+		steps: [
+			"Skjær eplene i terninger og dynk i sitronsaft. Skjær ananas og stangselleri i biter (og noen druer).",
+			"Bland majones og krem.",
+			"Bland alt sammen, smak til med sitron og ananassaft.",
+			"Pynt med blå druer og valnøtter.",
+		],
+	},
+	{
+		id: "23",
+		name: "Falafel",
+		description: "Krydret falafel av kikerter, stekt i godt med olje.",
+		people: 2,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: 1, unit: "boks", name: "kikerter (3,5 dl)" },
+					{ amount: 1, unit: "liten", name: "gul løk, hakket" },
+					{ amount: 3, unit: "fedd", name: "hvitløk, hakket" },
+					{ amount: 1, unit: "neve", name: "frisk koriander" },
+					{ amount: 1, unit: "ts", name: "bakepulver" },
+					{ amount: 1, unit: "ts", name: "salt" },
+					{ amount: 1, unit: "liten ts", name: "paprikapulver" },
+					{ amount: 1 / 2, unit: "ts", name: "spisskummen" },
+					{ amount: 2, unit: "krm", name: "kardemomme" },
+					{ amount: 1, unit: "krm", name: "chilipulver" },
+					{ amount: null, unit: "", name: "litt pepper" },
+					{ amount: null, unit: "5 - 8 ss", name: "kikertmel" },
+				],
+			},
+		],
+		steps: [
+			"Bland alle ingrediensene utenom kikertmelet. Mos med stavmikser.",
+			"Bland inn kikertmel til det blir en litt fast masse.",
+			"Stek i godt med olje.",
+		],
+	},
+	{
+		id: "24",
+		name: "Georgiansk Casusuli",
+		description:
+			"Georgisk gryte med oksekjøtt, adjika og mye friske urter. Tar lang tid.",
+		people: null,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: 1, unit: "kg", name: "oksekjøtt (høyrygg, bog ...)" },
+					{ amount: 1, unit: "kg", name: "gul løk, hakket" },
+					{ amount: 2, unit: "bokser", name: "hermetiske tomater" },
+					{ amount: 1, unit: "", name: "rød paprika, hakket" },
+					{ amount: 1, unit: "", name: "rød chili uten frø, hakket" },
+					{ amount: 50, unit: "g", name: "smør" },
+					{ amount: 3, unit: "ss", name: "olivenolje" },
+					{ amount: 3, unit: "ss", name: "adjika" },
+					{ amount: 2, unit: "ss", name: "tomatpuré" },
+					{ amount: 1, unit: "ts", name: "basilikum" },
+					{ amount: 1, unit: "ts", name: "korianderpulver" },
+					{ amount: 70, unit: "g", name: "fersk koriander" },
+					{ amount: 30, unit: "g", name: "fersk persille" },
+					{ amount: null, unit: "", name: "salt" },
+					{ amount: 20, unit: "g", name: "hvitløk, most" },
+				],
+			},
+		],
+		steps: [
+			"Surr oksekjøttet i olje til det blir brunt. Ha i løk og 50 g smør. La det putre på svak varme i 90 minutter.",
+			"Ha i paprika, tomater, chili, adjika, basilikum, korianderpulver, salt og tomatpuré. La det putre i 30 minutter.",
+			"Ha i most hvitløk, hakket koriander og persille. La det stå av varmen i 15 minutter.",
+			"Server med brød.",
+		],
+	},
 ];
 
 export default RECIPES;
