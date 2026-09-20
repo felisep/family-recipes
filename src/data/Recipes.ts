@@ -2,6 +2,7 @@ const RECIPES = [
 	{
 		id: "1",
 		name: "Fransk Ostepai",
+		tag: ["Middag"],
 		description: "En klassisk fransk ostepai med egg, ost og skinke.",
 		people: 4,
 		ingredients: [
@@ -35,6 +36,7 @@ const RECIPES = [
 	{
 		id: "2",
 		name: "Pan Amasado",
+		tag: ["Gjærbakst"],
 		description: "Chilensk brød som er mykt og deilig.",
 		people: 8,
 		ingredients: [
@@ -61,6 +63,7 @@ const RECIPES = [
 	{
 		id: "3",
 		name: "Ramen svinekjøtt med appelsinmarinade",
+		tag: ["Middag"],
 		description:
 			"En deilig appelsinmarinade med svinekjøtt. Lages tidlig om morgenen",
 		people: 2,
@@ -86,6 +89,7 @@ const RECIPES = [
 	{
 		id: "6",
 		name: "Empanadas",
+		tag: ["Middag"],
 		description: "Chilenske empanadas med kjøttdeigfyll, oliven og rosiner.",
 		people: 8,
 		ingredients: [
@@ -140,6 +144,7 @@ const RECIPES = [
 	{
 		id: "7",
 		name: "Gulrotkake",
+		tag: ["Dessert"],
 		description: "Saftig gulrotkake med kremostglasur.",
 		people: 4,
 		ingredients: [
@@ -179,6 +184,7 @@ const RECIPES = [
 	{
 		id: "8",
 		name: "Tandoori Chicken",
+		tag: ["Middag"],
 		description: "Yoghurtmarinert tandoorikylling servert med ris og papadums.",
 		people: 2,
 		ingredients: [
@@ -206,6 +212,7 @@ const RECIPES = [
 	{
 		id: "9",
 		name: "Rød linsesuppe",
+		tag: ["Middag"],
 		description: "Kremet suppe av røde linser med rød currypaste.",
 		people: 2,
 		ingredients: [
@@ -235,6 +242,7 @@ const RECIPES = [
 	{
 		id: "10",
 		name: "Fiskesuppe",
+		tag: ["Middag"],
 		description: "Kremet fiskesuppe med hjemmelaget kraft av fiskerester.",
 		people: 4,
 		ingredients: [
@@ -277,6 +285,7 @@ const RECIPES = [
 	{
 		id: "11",
 		name: "Kaldhevet Foccacia",
+		tag: ["Gjærbakst"],
 		description: "Luftig focaccia med lang kaldheving og god olivenolje.",
 		people: 15,
 		ingredients: [
@@ -303,6 +312,7 @@ const RECIPES = [
 	{
 		id: "12",
 		name: "Dumplingsuppe",
+		tag: ["Middag"],
 		description: "Rask asiatisk dumplingsuppe med pak choi og vårløk.",
 		people: 2,
 		ingredients: [
@@ -338,6 +348,7 @@ const RECIPES = [
 	{
 		id: "13",
 		name: "Pizza Napolitana",
+		tag: ["Gjærbakst"],
 		description:
 			"Kaldhevet pizzadeig med enkel tomatsaus. Deigen settes dagen før.",
 		people: 4,
@@ -380,6 +391,7 @@ const RECIPES = [
 	{
 		id: "14",
 		name: "Gnocchi med tomatsaus og oliven",
+		tag: ["Middag"],
 		description: "Rask gnocchi i tomatsaus med kapers og oliven.",
 		people: 2,
 		ingredients: [
@@ -415,6 +427,7 @@ const RECIPES = [
 	{
 		id: "15",
 		name: "Protein pannekaker",
+		tag: ["Protein"],
 		description:
 			"Luftige proteinpannekaker som stekes i ildfast form, toppet med frukt eller bær.",
 		people: 1,

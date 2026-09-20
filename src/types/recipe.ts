@@ -1,6 +1,7 @@
 type Recipe = {
 	id: string;
 	name: string;
+	tag: string[];
 	description: string;
 	people: number | null;
 	ingredients: IngredientsInfo[];
