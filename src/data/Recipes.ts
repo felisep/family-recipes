@@ -728,6 +728,40 @@ const RECIPES = [
 			"Server med brød.",
 		],
 	},
+	{
+		id: "25",
+		name: "Surdeigsbrød",
+		description:
+			"Luftig surdeigsbrød med litt rugmel. Hever over natten i kjøleskapet og stekes i gryte.",
+		people: null,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: 450, unit: "g", name: "hvetemel" },
+					{ amount: 50, unit: "g", name: "rugmel" },
+					{ amount: 350, unit: "g", name: "vann" },
+					{ amount: 15, unit: "g", name: "salt" },
+					{ amount: 100, unit: "g", name: "surdeigsstarter" },
+				],
+			},
+		],
+		steps: [
+			"Bland hvetemel, rugmel og vann. La det hvile i 30–60 minutter.",
+			"Ha i starter og salt, og klem det godt inn i deigen.",
+			"Strekk og brett deigen hver 30. minutt, 4–6 runder.",
+			"La deigen heve i romtemperatur i 1–3 timer, til den har økt 50–75 % og er luftig og boblete. Se på deigen fremfor klokka.",
+			"Forform: Vipp deigen ut på benken og fold den lett til en ball. La den hvile tildekket i 20–30 minutter.",
+			"Form: Strekk deigen forsiktig ut og rull den stramt sammen. Klyp sammen skjøten. Ikke trykk ut all luften.",
+			"Mel hevekurven godt, gjerne med rismel, og legg brødet i med skjøten opp.",
+			"Dekk til og sett i kjøleskapet i 8–16 timer.",
+			"Forvarm ovnen med gryten inni på 250 grader i 45–60 minutter.",
+			"Vipp brødet rett fra kjøleskapet ut på bakepapir, snitt det, og legg det i gryten.",
+			"Stek 20 minutter med lokk på 250 grader.",
+			"Ta av lokket og stek 20–25 minutter på 230 grader, til skorpen er mørk. Deler du deigen i to brød, holder det med 15–20 minutter uten lokk.",
+			"La brødet avkjøles i minst 1 time før du skjærer det.",
+		],
+	},
 ];
 
 export default RECIPES;
