@@ -762,6 +762,41 @@ const RECIPES = [
 			"La brødet avkjøles i minst 1 time før du skjærer det.",
 		],
 	},
+	{
+		id: "26",
+		name: "Suppe med høyrygg og gresskar",
+		description:
+			"Kraftig suppe med høyrygg, poteter, gresskar og mais. Serveres med frisk koriander.",
+		people: null,
+		ingredients: [
+			{
+				heading: null,
+				items: [
+					{ amount: null, unit: "", name: "høyrygg" },
+					{ amount: null, unit: "", name: "olje" },
+					{ amount: null, unit: "", name: "vann (nok til å dekke kjøttet)" },
+					{ amount: 1, unit: "", name: "gulrot" },
+					{ amount: null, unit: "", name: "gul løk" },
+					{ amount: null, unit: "", name: "potet (2 per person)" },
+					{ amount: null, unit: "", name: "gresskar" },
+					{ amount: null, unit: "", name: "mais" },
+					{ amount: null, unit: "", name: "hvitløk (valgfritt)" },
+					{ amount: null, unit: "", name: "koriander" },
+					{ amount: null, unit: "", name: "Maggi" },
+					{ amount: null, unit: "", name: "hvitløkspulver" },
+					{ amount: null, unit: "", name: "spisskummen" },
+					{ amount: null, unit: "", name: "pepper" },
+				],
+			},
+		],
+		steps: [
+			"Kutt kjøttet i biter og riv gulroten. Stek kjøttet og gulroten i gryten med olje, og krydre.",
+			"Hell på vann til det dekker kjøttet, omtrent halvveis opp i gryten. Ha i løken og la det koke i 30 minutter.",
+			"Ta ut løken. Ha i potetene og gresskaret, og kok til begge er møre.",
+			"Mos maisen med stavmikser og rør den inn i suppen.",
+			"Topp med koriander.",
+		],
+	},
 ];
 
 export default RECIPES;
