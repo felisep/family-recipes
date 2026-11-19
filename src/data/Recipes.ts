@@ -767,7 +767,7 @@ const RECIPES = [
 		name: "Suppe med høyrygg og gresskar",
 		description:
 			"Kraftig suppe med høyrygg, poteter, gresskar og mais. Serveres med frisk koriander.",
-		people: null,
+		people: 2,
 		ingredients: [
 			{
 				heading: null,
